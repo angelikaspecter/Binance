@@ -1,0 +1,85 @@
+.row {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+.modal {
+	background: #181a20 url("../img/img2.webp") no-repeat 100% 100%;
+	background-size: contain;
+	& .modal-dialog {
+		& .modal-content {
+			background-color: transparent;
+			border: 0;
+			& .modal-header {
+				border: 0;
+				display: flex;
+				flex-direction: column;
+				& .btn-close {
+					color: rgba(255, 255, 255, 1);
+				}
+				& .title {
+					color: rgba(255, 255, 255, 1);
+				}
+				& .desc {
+					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+			& .modal-body {
+				& label {
+					color: rgba(255, 255, 255, 1);
+					font-size: 0.75em;
+					margin-bottom: 0.5em;
+				}
+				& input {
+					border-radius: 0;
+					background-color: #181a20;
+					border-color: rgba(255, 255, 255, 0.2);
+					color: rgba(255, 255, 255, 1);
+				}
+				& .copyright {
+					font-size: 0.75em;
+					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+}
+
+header {
+	.navbar {
+		background-color: #181a20;
+		.navbar-brand {
+			background: url("../img/logo.webp") no-repeat 50% 50%;
+			background-size: cover;
+			overflow: hidden;
+		}
+	}
+}
+
+main {
+	& .card {
+		border: 0;
+	}
+	.privilege,
+	.start {
+		padding: 3em 0;
+	}
+	& .about {
+		background-color: #e1e1e1;
+	}
+	& .start {
+		background: url("../img/img4.webp") no-repeat;
+	}
+}
+
+footer {
+	padding: 3em 0;
+	background-color: #181a20;
+	& .footer-logo {
+		overflow: hidden;
+	}
+	& .copyright {
+		color: #ffffff;
+		margin: 0 auto;
+	}
+}

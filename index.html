@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Binance Academy</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<!--Main-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-dark px-5">
+			<div class="container-fluid">
+				<a class="navbar-brand"></a>
+				<button class="btn btn-warning" type="submit" data-bs-toggle="modal"
+					data-bs-target="#staticBackdrop">Регистрация</button>
+				<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+					tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+								<h3 class="title">Регистрируйтесь и начните обучение уже сегодня!</h3>
+								<p class="desc">
+									Зарегестрируйтесь с помощью эл. почты и мобильного телефона
+								</p>
+							</div>
+							<div class="modal-body">
+								<form action="mail.php" method="post">
+									<div class="mb-3">
+										<label for="name">Имя</label>
+										<input id="name" name="forename" class="form-control" type="text" required="">
+									</div>
+									<div class="mb-3">
+										<label for="surname">Фамилия</label>
+										<input id="surname" name="surname" class="form-control" type="text" required="">
+									</div>
+									<div class="mb-3">
+										<label for="email">E-mail</label>
+										<input id="email" name="email" class="form-control" type="email" required="">
+									</div>
+									<div class="mb-3">
+										<label for="phone">Телефон</label>
+										<input id="phone" name="phone" class="form-control phone" type="tel"
+											required="">
+									</div>
+									<button name="button" type="button"
+										class="btn btn-warning btn-reg w-100 my-3">Начать
+										обучение</button>
+									<p class="copyright text-center">
+										© 2017 - 2022 Binance.com. All rights reserved
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="promo container">
+			<div class="row row-cols-1 row-cols-lg-2 g-3">
+				<div class="col d-flex align-items-center">
+					<div class="card">
+						<div class="card-body">
+							<h1 class="card-title">Обучение от Binance Academy</h1>
+							<p class="card-text"><b>Binance Academy</b> это образовательный портал адресован как
+								любителям
+								криптовалют
+								со всего мира, так и тем, кто интересуется этой темой. Binance Academy предлагает своим
+								пользователям доступ к высококачественному контенту, который простым и понятным образом
+								приближает и объясняет принципы работы и предмет мира криптовалют, инвестирования и
+								технологий
+								блокчейна. С момента запуска Binance Academy в бета-версии, больше 12 тысяч россиян
+								смогли
+								накопить деньги на свою первую квартиру!</p>
+							<button class="btn btn-warning" data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop">Начать
+								обучение</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<picture>
+						<source srcset="img/img1.webp" type="image/svg+xml">
+						<img src="img/img1.webp" class="img-fluid" alt="">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="stroke">
+			<!-- TradingView Widget BEGIN -->
+			<div class="tradingview-widget-container">
+				<div class="tradingview-widget-container__widget"></div>
+				<script type="text/javascript"
+					src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+						{
+							"symbols": [
+								{
+									"proName": "FOREXCOM:SPXUSD",
+									"title": "S&P 500"
+								},
+								{
+									"proName": "FOREXCOM:NSXUSD",
+									"title": "US 100"
+								},
+								{
+									"proName": "FX_IDC:EURUSD",
+									"title": "EUR/USD"
+								},
+								{
+									"proName": "BITSTAMP:BTCUSD",
+									"title": "Биткоин"
+								},
+								{
+									"proName": "BITSTAMP:ETHUSD",
+									"title": "Эфириум"
+								}
+							],
+								"showSymbolLogo": true,
+									"colorTheme": "light",
+										"isTransparent": false,
+											"displayMode": "adaptive",
+												"locale": "ru"
+						}
+					</script>
+			</div>
+			<!-- TradingView Widget END -->
+		</section>
+		<section class="privilege container">
+			<h2 class="text-center mb-5">Binance Academy предусматривает</h2>
+			<div class="row row-cols-1 row-cols-lg-5 g-3">
+				<div class="col">
+					<div class="card d-flex flex-column align-items-center">
+						<img class="mb-2" src="img/icon4.svg" height="70"
+							alt="Качественное обслуживание граждан специалистами">
+						<p class="desc text-center">
+							Качественное обслуживание
+							граждан специалистами
+						</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card d-flex flex-column align-items-center">
+						<img class="mb-2" src="img/icon1.svg" height="70"
+							alt="Поддержку 24/7 всем участникам платформы">
+						<p class="desc text-center">
+							Поддержку 24/7 всем участникам
+							платформы
+						</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card d-flex flex-column align-items-center">
+						<img class="mb-2" src="img/icon3.svg" height="70" alt="Гарантированный рост инвестиций">
+						<p class="desc text-center">
+							Гарантированный рост
+							инвестиций
+						</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card d-flex flex-column align-items-center">
+						<img class="mb-2" src="img/icon5.svg" height="70" alt="Защита от волатильности частного рынка">
+						<p class="desc text-center">
+							Защита от волатильности
+							частного рынка
+						</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card d-flex flex-column align-items-center">
+						<img class="mb-2" src="img/icon2.svg" height="70" alt="Обучение торговли акциями">
+						<p class="desc text-center">
+							Обучение торговли
+							акциями
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about container-fluid">
+			<div class="container">
+				<h2 class="text-center mb-3 visually-hidden">Что мы можем расскать о себе</h2>
+				<div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center">
+					<div class="col">
+						<p class="desk">
+							Binance Academy является образовательным проектом криптовалютной биржи Binance в сфере
+							блокчейна и
+							криптовалюты.
+						</p>
+						<p class="desk">
+							Компания работает над созданием собственной экосистемы, в рамках которой развивает различные
+							проекты и
+							запускает продукты, в том числе собственный электронный кошелек для пользователей,
+							благотворительный
+							фонд, различные корпоративные решения, платформа для запуска токенов и nft проектов. Binance
+							Academy
+							основан в 2017 году Чанпэном Чжао, также известным как CZ (Changpeng Zhao), который является
+							одним
+							из
+							самых известных общественных деятелей в крипто-индустрии.
+						</p>
+					</div>
+					<div class="col">
+						<picture>
+							<source srcset="img/img3.webp" type="image/svg+xml">
+							<img src="img/img3.webp" class="img-fluid" alt="">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="start container-fluid">
+			<div class="container text-center">
+				<h2 class="text-center mb-5">Начните обучение прямой сейчас</h2>
+				<button type="submit" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					Начать обучение
+				</button>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer-logo text-center">
+				<a class="footer-brand">
+					<img src="img/logo.webp" alt="">
+				</a>
+			</div>
+			<p class="copyright text-center">
+				© 2022 Binance Academy. <br> All Rights Reserved.
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>

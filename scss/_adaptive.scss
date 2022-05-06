@@ -1,0 +1,227 @@
+@media (max-width: 359px) {
+	.modal {
+		background: #181a20;
+	}
+	.btn {
+		width: 100%;
+		margin-bottom: 0.75em;
+	}
+	header {
+		.navbar {
+			& .navbar-brand {
+				width: 100%;
+				height: 60px;
+				margin-bottom: 0.75em;
+			}
+		}
+	}
+	main {
+		.promo {
+			& .card {
+				& .card-title {
+					margin-top: 1em;
+					font-size: 1.75em;
+				}
+				& .card-text {
+					margin: 2.5em 0;
+				}
+				& .btn {
+					width: 100%;
+				}
+			}
+			& picture {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				& img {
+					padding: 0 0 3em;
+				}
+			}
+		}
+		.title {
+			font-size: 1.5em;
+		}
+		.about {
+			& p {
+				margin-top: 2em;
+				font-size: 1em;
+			}
+		}
+		.start {
+			height: 350px;
+			background-size: 95%;
+			background-position: 0 75%;
+		}
+	}
+	footer {
+		.footer-logo {
+			& .footer-brand img {
+				width: 200px;
+			}
+		}
+	}
+}
+@media (min-width: 360px) and (max-width: 505px) {
+	.modal {
+		background: #181a20;
+	}
+	.btn {
+		width: 100%;
+		margin-bottom: 0.75em;
+	}
+	header {
+		.navbar {
+			& .navbar-brand {
+				width: 100%;
+				height: 70px;
+				margin-bottom: 0.75em;
+			}
+		}
+	}
+	main {
+		.promo {
+			& .card {
+				& .card-title {
+					margin-top: 1em;
+					font-size: 1.75em;
+				}
+				& .card-text {
+					margin: 2.5em 0;
+				}
+				& .btn {
+					width: 100%;
+				}
+			}
+			& picture {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				& img {
+					padding: 0 0 3em;
+				}
+			}
+		}
+		.title {
+			font-size: 1.5em;
+		}
+		.about {
+			& p {
+				margin-top: 2em;
+				font-size: 1em;
+			}
+		}
+		.start {
+			height: 350px;
+			background-size: 95%;
+			background-position: 0 75%;
+		}
+	}
+	footer {
+		.footer-logo {
+			& .footer-brand img {
+				width: 200px;
+			}
+		}
+	}
+}
+@media (min-width: 506px) {
+	.modal {
+		background: #181a20;
+	}
+	.btn {
+		width: 200px;
+		margin-bottom: 0;
+	}
+	header {
+		.navbar {
+			& .navbar-brand {
+				width: 170px;
+				height: 60px;
+			}
+		}
+	}
+	main {
+		.promo {
+			& .card {
+				& .card-title {
+					margin-top: 1.5em;
+					font-size: 2em;
+				}
+				& .card-text {
+					margin: 1.5em 0 2em;
+				}
+				& .btn {
+					width: 100%;
+				}
+			}
+			& picture {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				& img {
+					padding: 1.5em 0 3em;
+				}
+			}
+		}
+		.about {
+			& p {
+				margin-top: 3em;
+				font-size: 1em;
+			}
+		}
+		.start {
+			height: 350px;
+			background-size: 65%;
+			background-position: 0 75%;
+		}
+	}
+	footer {
+		.footer-logo {
+			& .footer-brand img {
+				width: 200px;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.modal {
+		background: #181a20 url("../img/img2.webp") no-repeat 100% 100%;
+	}
+	main {
+		.promo {
+			& .card {
+				& .card-title {
+					margin-top: 0;
+				}
+				& .btn {
+					width: 200px;
+				}
+			}
+			& picture {
+				& img {
+					padding: 0 0 3em;
+				}
+			}
+		}
+		.about {
+			& p {
+				margin-top: 0;
+				font-size: 1em;
+			}
+		}
+		.start {
+			height: 380px;
+			background-size: 55%;
+			background-position: 0 80%;
+		}
+	}
+}
+@media (min-width: 1400px) {
+	main {
+		.promo {
+			& .card {
+				padding-right: 3.25em;
+			}
+		}
+	}
+}
